@@ -315,9 +315,11 @@ ax2.set_ylim([-0.5, 15])
 ax2.text(5.27, 8, '$\Delta R=$%s  fm'%(round(resultsRad[1],3)), fontsize=20 ,
         bbox={'facecolor': 'none', 'pad': 10,'edgecolor': 'blue','linewidth':4})
 
+print("\n\n-------------------------------------\nWeb browser version: Please open FIG1-OriginalDataSet.png \n-------------------------------------\n\n")
+
 print("We can reduce one of the error bars by a factor of two\n")
 
-print("Which point should we choose? After closing the graph type 1, 2, or 3 to select the first, second or third point respectively\n")
+print("Which point should we choose? Type 1, 2, or 3 to select the first, second or third point respectively\n")
 
 
 plt.tight_layout()
@@ -424,6 +426,7 @@ ax2.set_xlim([5.25, 5.7])
 ax2.set_ylim([-0.5, 15])
 
 plt.tight_layout()
+print("\n\n-------------------------------------\nWeb browser version: Please open FIG2-ReducedOneErrorBar.png \n-------------------------------------\n\n")
 plt.savefig('FIG2-ReducedOneErrorBar.png', dpi=fig.dpi)
 plt.show()
 
@@ -438,12 +441,13 @@ print("\n----------------------------")
 
 
 
-print("We can now instead measure in a new location\n")
-
+print("We can now instead measure in a new location q4\n")
 
 print("Lets make a plot of the error in the radius R as a function of this new q4 location\n")
 
-print("Where should we measure? After closing the graph type the q value with two decimal places of your choice\n")
+print("\n\n-------------------------------------\nWeb browser version: Please open FIG3-SelectingFourthLoc.png \n-------------------------------------\n\n")
+
+print("Where should we measure? Type the q value of your choice with two decimal places\n")
 
 
 #This list will carry the information on how \Delta R changes as we place the new location q_4 at different places
@@ -506,7 +510,7 @@ plt.savefig('FIG3-SelectingFourthLoc.png', dpi=fig.dpi)
 plt.show()
 
 #The user selects the location
-q4=float(input())
+q4=input()
 
 #We create the new dataset
 qlocations2=np.append(qlocations,q4)
@@ -595,6 +599,7 @@ ax2.set_ylim([-0.5, 20])
 
 #Final plot call
 plt.tight_layout()
+print("\n\n-------------------------------------\nWeb browser version: Please open FIG4-SelectedNewLoc.png \n-------------------------------------\n\n")
 plt.savefig('FIG4-SelectedNewLoc.png', dpi=fig.dpi)
 plt.show()
 
