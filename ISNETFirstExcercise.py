@@ -328,7 +328,7 @@ plt.show()
 
 
 #User interaction
-pointchosen=input()
+pointchosen=int(input())
 errors2=ErrorQList(qlocations)
 
 ##################################
@@ -510,7 +510,7 @@ plt.savefig('FIG3-SelectingFourthLoc.png', dpi=fig.dpi)
 plt.show()
 
 #The user selects the location
-q4=input()
+q4=float(input())
 
 #We create the new dataset
 qlocations2=np.append(qlocations,q4)
