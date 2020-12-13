@@ -427,11 +427,10 @@ ax2.set_ylim([-0.5, 15])
 
 plt.tight_layout()
 print("\n\n-------------------------------------\nWeb browser version: Please open FIG2-ReducedOneErrorBar.png \n-------------------------------------\n\n")
-print("\n\n\nHere are the results for reducing your chosen error bar\n\n\n")
 plt.savefig('FIG2-ReducedOneErrorBar.png', dpi=fig.dpi)
 plt.show()
-
-
+print("\n\n\nHere are the results for reducing your chosen error bar\n\n\n")
+#dummystop=input()
 
 ##################################
 ###########Third round of plots for a new measurement
